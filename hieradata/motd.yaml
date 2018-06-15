@@ -1,0 +1,13 @@
+# ~/puppet5-master-r10k/puppet/hieradata/motd.yaml
+---
+motd_header:
+    - This is host %{fqdn}. 
+    - Running on %{operatingsystem}, %{operatingsystemrelease}.
+    - ================== ** P U P P E T   M A N A G E D   H O S T ** ==================
+    - This host is managed by Puppet.
+    - Changes made locally may be overridden.
+    - "Puppet environment: %{environment}"
+    - "Puppet hostgroup: %{hostgroup]" 
+    - ================== ** A U T H O R I Z E D   P E R S O N N E L   O N L Y ** ==================
+    - This system is restricted to authorized users only. This system is subject to surveillance.
+    - Any unauthorized access and/or modification will be prosecuted to the full extent of the law. 

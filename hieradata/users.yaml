@@ -1,0 +1,18 @@
+# ~/puppet5-master-r10k/puppet/hieradata/users.yaml
+---
+users_default:
+    jsmith:
+        ensure: present
+        uid: 2000
+        gid: staff
+        groups:
+            - staff
+            - sysadmins
+        comment: 'John Smith'
+        managehome: true
+        password: '$1$zi13KdCr$zJvdWm5h552P8b34AjxO11'
+        shell: /bin/bash
+        ssh_authorized_keys:
+            mykey:
+                type: 'ssh-rsa'
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC8V7Yp5KMceOsZ5IGaSLDL93tWm+XJBUqffCoA1fwHlYBFxx2RXybuCUCSKjJl4zf5yvdtaj0aIHOw2q/tPNrQ3YY2VgDT09FQLsRyRQtOiu0igrdsWLL1GZtlSSTWR6fwvJ6WG+9kDKqOy3kgwplpwXupHTZB3yD+/sDLWCZGPm14bZ+KWKG0Gv7zDbidrUQcwOpc+VSpI40lhBva0iNV1uLLljByx8GnqcvzpCw8hkhHICQLhyJ/F0B3Qb5ImdhLDue0NcP0out4Mp9oP+ai4qRY2jf0/sVk0yhJhSY9TYJZZy7DNYFXQeUJaw9n5SOmkz0Hxut0uVwM/ur9ff7l'

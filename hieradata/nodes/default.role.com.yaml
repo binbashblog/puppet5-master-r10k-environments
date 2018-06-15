@@ -1,0 +1,5 @@
+# ~/puppet5-master-r10k/puppet/hieradata/nodes
+---
+environment: production
+classes:
+  - roles::default
