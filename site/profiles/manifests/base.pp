@@ -2,7 +2,7 @@
 # Config common to all nodes
 class profiles::base {
     # os specific profiles
-    case $::osfamily {
+    case $::operatingsystem {
       'debian': {
         include profiles::base::debian
       }
@@ -23,10 +23,6 @@ class profiles::base {
       }
     }
 
-    # making sure the puppet agent is started and enabled after the first time running
-    service { 'puppet':
-        ensure => 'running',
-        enable => 'true',
-    }
 
 }
+

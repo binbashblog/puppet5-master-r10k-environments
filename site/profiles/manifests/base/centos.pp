@@ -22,8 +22,7 @@ class profiles::base::centos {
     # common users
     users { 'default': }
 
-    # creates a file in profile.d that adds the new puppet bin location to the path variable in bash, so you don't have
-to type the full path to the puppet binary
+    # creates a file in profile.d that adds the new puppet bin location to the path variable in bash, so you don't have to type the full path to the puppet binary
     file { '/etc/profile.d/puppet-agent.sh':
         ensure  => present,
         owner   => 'root',

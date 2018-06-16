@@ -1,6 +1,6 @@
 #role/manifests/web.pp
 class role::web {
-  include profile::base
-  include profile::lamp
+  include profiles::base
+  include profiles::lamp
 }
 
